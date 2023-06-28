@@ -2,7 +2,7 @@
   --hue: 200;
   --saturation: 50%;
   --foreground-color: hsl(var(--hue), var(--saturation), 75%);
-  --background-color: hsl(var(--hue), var(--saturation), 20%);
+  --background-color: hsl(var(--hue), var(--saturation), 75%);
 }
 
 body {
@@ -12,65 +12,74 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.container1{
-  height: 100vh;
-  width: 60vw;
-  border-right: 2px solid #046262;
-}
-label {
-  display: block;
-  margin-bottom: 10px;
-  color: #f9f9f9;
+.container {
+  width: 80vw;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+  left: 10vw;
+  overflow: scroll;
 }
 
-input[type="text"], select {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+.diagonal-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background: linear-gradient(to bottom right, #d69b9b, #3c3c90);
+  transform: skewY(-26deg);
+  transform-origin: top left;
+  z-index: 0;
 }
-#studentForm{
+img {
+  position: absolute;
+  top: 29vh;
+  margin: 7vh;
+  border-radius: 10vh;
+  left: 7vh;
+  width: 28vw;
+  height: 51vh;
+}
+strong{
+  position: absolute;
+top: 87vh;
+left: 14vh;
+font-size: 4vw;
+transform: skewY(-1deg);
+}
+.main-box{
+  height: 30vh;
+  width: 36vw;
+  border: 1px solid;
+  position: absolute;
+  transform: skewY(26deg);
+  left: 42vw;
+  top: 127vh;
+  box-shadow: 1px 3px 30px 10px;
+}
+h3 {
+  text-align: center;
   position: relative;
-  top: 9vh;
+  top: -7vh;
+  font-size: 8vh;
 }
 button {
-  display: flex;
-  width: 38%;
-  padding: 10px;
-  background-color: transparent;
-  color: #fff;
-  border-radius: 4px;
-  cursor: pointer;
-  left: 34%;
+  width: 12vw;
   position: relative;
-  border: 1px solid gold;
-  margin-top: 8vh;
-  box-shadow: 1px 1px 38px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  height: 6vh;
+  top: -1vh;
 }
-#text{
-    position: relative;
-    left: 35%;
-}
-
-ul {
-
-    margin-top: 20px;
-    padding: 0;
-    left: 60vw;
-    position: relative;
-    top: -104vh;
-    list-style: none;
-
-}
-
-li {
-  background-color: #ecd0d0;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 4px;
-}
-.container2{
-  height: 100vh;
-  width: 40vw;
+.time {
+  position: absolute;
+  height: 10vh;
+  width: 20vw;
+  z-index: 1;
+  top: 11vh;
+  left: 8vw;
+  text-align: center;
+  font-size: 3vw;
+  top: 11vh;
 }
