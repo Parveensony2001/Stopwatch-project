@@ -1,0 +1,76 @@
+:root {
+  --hue: 200;
+  --saturation: 50%;
+  --foreground-color: hsl(var(--hue), var(--saturation), 75%);
+  --background-color: hsl(var(--hue), var(--saturation), 20%);
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container1{
+  height: 100vh;
+  width: 60vw;
+  border-right: 2px solid #046262;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #f9f9f9;
+}
+
+input[type="text"], select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#studentForm{
+  position: relative;
+  top: 9vh;
+}
+button {
+  display: flex;
+  width: 38%;
+  padding: 10px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  left: 34%;
+  position: relative;
+  border: 1px solid gold;
+  margin-top: 8vh;
+  box-shadow: 1px 1px 38px;
+}
+#text{
+    position: relative;
+    left: 35%;
+}
+
+ul {
+
+    margin-top: 20px;
+    padding: 0;
+    left: 60vw;
+    position: relative;
+    top: -104vh;
+    list-style: none;
+
+}
+
+li {
+  background-color: #ecd0d0;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.container2{
+  height: 100vh;
+  width: 40vw;
+}
